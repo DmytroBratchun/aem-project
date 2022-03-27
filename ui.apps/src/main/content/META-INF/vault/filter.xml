@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/bratchun-project/clientlibs"/>
+    <filter root="/apps/bratchun-project/components"/>
+    <filter root="/apps/bratchun-project/i18n"/>
+</workspaceFilter>

@@ -1,0 +1,6 @@
+{
+  "mobile.resourceTypes": [
+    "bratchun-project/components/page"
+  ],
+  "README": "Indicate which page resource types should display the mobile emulators."
+}

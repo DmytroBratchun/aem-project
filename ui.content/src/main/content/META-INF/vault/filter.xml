@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/bratchun-project" mode="merge"/>
+    <filter root="/content/bratchun-project" mode="merge"/>
+    <filter root="/content/dam/bratchun-project/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/bratchun-project" mode="merge"/>
+</workspaceFilter>
