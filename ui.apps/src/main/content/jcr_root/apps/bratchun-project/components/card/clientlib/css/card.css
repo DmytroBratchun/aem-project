@@ -1,0 +1,67 @@
+.component-card {
+  perspective: 600px;
+  display: inline-block;
+}
+
+.component-card__content {
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  height: 200px;
+  width: 200px;
+}
+
+.component-card__side {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 30%) 0px 0px 7px;
+}
+
+.component-card__side:hover {
+  box-shadow: rgb(0 0 0 / 50%) 0px 0px 10px;
+}
+
+.component-card__side--front {
+
+}
+
+.component-card__side--back {
+  background-color: #ecedeb;
+  transform: rotateY(180deg);
+}
+
+.component-card__content.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.component-card__image-with-text {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.component-card__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  border-radius: 5px;
+}
+
+.component-card__title {
+  position: absolute;
+  color: white;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.component-card__description {
+  margin: 15px;
+}
