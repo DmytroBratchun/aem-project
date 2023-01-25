@@ -4,6 +4,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ValueMap;
 import org.apache.sling.models.spi.DisposalCallbackRegistry;
 import org.apache.sling.models.spi.Injector;
+import org.apache.sling.models.spi.injectorspecific.InjectAnnotationProcessor2;
+import org.apache.sling.models.spi.injectorspecific.StaticInjectAnnotationProcessorFactory;
 import org.osgi.service.component.annotations.Component;
 
 import java.lang.reflect.AnnotatedElement;
@@ -12,8 +14,8 @@ import java.util.Optional;
 
 import static org.osgi.framework.Constants.SERVICE_RANKING;
 
-@Component(service = Injector.class)
-public class TestInjector implements Injector {
+@Component(service = Injector.class, property = {SERVICE_RANKING + "=" + 1005})
+public class TestInjector implements Injector, StaticInjectAnnotationProcessorFactory {
 
     @Override
     public String getName() {
@@ -23,13 +25,14 @@ public class TestInjector implements Injector {
     @Override
     public Object getValue(Object object, String s, Type type, AnnotatedElement annotatedElement, DisposalCallbackRegistry disposalCallbackRegistry) {
         if (annotatedElement.isAnnotationPresent(TestInject.class)) {
-            Resource resource = (Resource) object;
-            if (resource != null) {
-                ValueMap valueMap = resource.adaptTo(ValueMap.class);
-                return valueMap.values().toString();
-            }
+            return "test injector";
         }
 
-        return "test-injector";
+        return null;
+    }
+
+    @Override
+    public InjectAnnotationProcessor2 createAnnotationProcessor(AnnotatedElement annotatedElement) {
+        return null;
     }
 }
