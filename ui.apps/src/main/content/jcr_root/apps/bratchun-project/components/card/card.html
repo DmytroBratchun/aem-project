@@ -1,10 +1,5 @@
-<sly data-sly-set.isEmpty="${!properties.fileReference}"></sly>
-
-<div class="cq-placeholder" data-sly-test="${wcmmode.edit && isEmpty}" data-emptytext="${component.title}"></div>
-
-<sly data-sly-use.image="image.js"></sly>
-
-<div class="component-card">
+<div data-sly-use.image="com.adobe.cq.wcm.core.components.models.Image"
+     class="component-card">
     <div class="component-card__content" onclick="this.classList.toggle('is-flipped');">
         <div class="component-card__side component-card__side--front">
             <div class="component-card__image-with-text">
@@ -16,8 +11,8 @@
             </div>
         </div>
         <div class="component-card__side component-card__side--back">
-            <div class="component-card__description" data-sly-test="${properties.description}">
-                ${properties.description}
+            <div class="component-card__description">
+                ${properties.description || "No Description"}
             </div>
         </div>
         <div class="component-card">

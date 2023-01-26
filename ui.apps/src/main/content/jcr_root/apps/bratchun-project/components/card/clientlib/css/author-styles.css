@@ -1,0 +1,16 @@
+.component-card--grey-image .component-card__image {
+        filter: grayscale(100%);
+    }
+
+.component-card--mirror-image .component-card__image {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+.component-card--left-title .component-card__title {
+    text-align: left;
+}
+
+.component-card--right-title .component-card__title {
+    text-align: right;
+}

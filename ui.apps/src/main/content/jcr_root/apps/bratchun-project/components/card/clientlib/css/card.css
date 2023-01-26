@@ -25,12 +25,11 @@
   box-shadow: rgb(0 0 0 / 50%) 0px 0px 10px;
 }
 
-.component-card__side--front {
-
-}
-
 .component-card__side--back {
   background-color: #ecedeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transform: rotateY(180deg);
 }
 
@@ -55,9 +54,10 @@
 .component-card__title {
   position: absolute;
   color: white;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 70%;
+  width: calc(100% - 10px);
+  margin: 5px;
+  text-align: center;
   font-weight: bold;
   font-size: 24px;
 }
