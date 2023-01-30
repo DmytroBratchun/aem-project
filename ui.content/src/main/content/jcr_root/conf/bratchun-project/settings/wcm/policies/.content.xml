@@ -303,6 +303,16 @@
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1575040440977>
+                <policy_181130641413200
+                        jcr:lastModified="{Date}2023-01-24T12:50:54.865+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Empty Page Policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:General,group:My project - Content,group:My project - Form,group:My project - Structure]"
+                        layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_181130641413200>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
@@ -339,6 +349,92 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
+            <card jcr:primaryType="nt:unstructured">
+                <policy
+                        jcr:lastModified="{Date}2023-01-25T18:30:10.829+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Styles policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        allowUpload="true"
+                        altValueFromDAM="false"
+                        disableLazyLoading="true"
+                        displayPopupTitle="false"
+                        isDecorative="false"
+                        jpegQuality="{Long}1"
+                        titleValueFromDAM="false"
+                        uuidDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <plugins jcr:primaryType="nt:unstructured">
+                        <crop
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                            <aspectRatios jcr:primaryType="nt:unstructured">
+                                <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        name="Wide Landscape"
+                                        ratio="0.8284"/>
+                                <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        name="Landscape"
+                                        ratio="0.6180"/>
+                                <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        name="Square"
+                                        ratio="1"/>
+                                <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        name="Portrait"
+                                        ratio="1.6180"/>
+                            </aspectRatios>
+                        </crop>
+                        <rotate
+                                jcr:primaryType="nt:unstructured"
+                                features="right"/>
+                        <flip
+                                jcr:primaryType="nt:unstructured"
+                                features="-"/>
+                        <map
+                                jcr:primaryType="nt:unstructured"
+                                features="rectangle,launch,unlaunch,confirm,circle,polygon"/>
+                    </plugins>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                                cq:styleGroupLabel="Image"
+                                cq:styleGroupMultiple="true"
+                                jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                        cq:styleClasses="component-card--grey-image"
+                                        cq:styleId="1674663262870"
+                                        cq:styleLabel="Grey Image"
+                                        jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                        cq:styleClasses="component-card--mirror-image"
+                                        cq:styleId="1674663346091"
+                                        cq:styleLabel="Mirror Image"
+                                        jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                        <item1
+                                cq:styleGroupLabel="Title alignment"
+                                jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                        cq:styleClasses="component-card--left-title"
+                                        cq:styleId="1674664108802"
+                                        cq:styleLabel="Left"
+                                        jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                        cq:styleClasses="component-card--right-title"
+                                        cq:styleId="1674664137736"
+                                        cq:styleLabel="Right"
+                                        jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
+                    </cq:styleGroups>
+                </policy>
+            </card>
         </components>
     </bratchun-project>
 </jcr:root>
