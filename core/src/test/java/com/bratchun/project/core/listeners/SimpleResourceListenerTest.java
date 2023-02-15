@@ -48,7 +48,7 @@ class SimpleResourceListenerTest {
         LoggingEvent event = events.get(0);
 
         assertAll(
-                () -> assertEquals(Level.DEBUG, event.getLevel()),
+                () -> assertEquals(Level.INFO, event.getLevel()),
                 () -> assertEquals(3, event.getArguments().size()),
                 () -> assertEquals(ChangeType.ADDED, event.getArguments().get(0)),
                 () -> assertEquals("/content/test", event.getArguments().get(1)),
