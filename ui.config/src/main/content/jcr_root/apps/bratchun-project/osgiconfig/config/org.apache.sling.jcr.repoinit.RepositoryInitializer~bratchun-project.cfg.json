@@ -2,6 +2,11 @@
     "scripts": [
         "create path (sling:OrderedFolder) /content/dam/bratchun-project",
         "create path (nt:unstructured) /content/dam/bratchun-project/jcr:content",
-        "set properties on /content/dam/bratchun-project/jcr:content\n  set cq:conf{String} to /conf/bratchun-project\n  set jcr:title{String} to \"My project\"\nend"
+        "create path (nt:folder) /var/log",
+        "create path (sling:Folder) /var/log/removedProperties",
+        "set properties on /content/dam/bratchun-project/jcr:content\n  set cq:conf{String} to /conf/bratchun-project\n  set jcr:title{String} to \"My project\"\nend",
+        "create service user bratchun-service-user with path /home/users/system/bratchun/service-users",
+        "set ACL for bratchun-service-user\r\nallow jcr:all on /content/bratchun-project\r\nend",
+        "set ACL for bratchun-service-user\r\nallow jcr:all on /var/log/removedProperties\r\nend"
     ]
 }

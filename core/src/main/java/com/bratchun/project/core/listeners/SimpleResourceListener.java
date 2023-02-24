@@ -32,7 +32,7 @@ import org.slf4j.LoggerFactory;
  */
 @Component(service = ResourceChangeListener.class,
         immediate = true,
-        property = {"ResourceChangeListener.PATHS=/content/bratchun-project",
+        property = {"ResourceChangeListener.PATHS=/content",
                 "ResourceChangeListener.CHANGES=CHANGED",
                 "ResourceChangeListener.CHANGES=ADDED"
         }
