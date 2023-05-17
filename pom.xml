@@ -26,6 +26,10 @@
     <name>My project</name>
     <description>My project</description>
 
+    <scm>
+        <developerConnection>scm:git:https://github.com/DmitryBratchun/aem-project.git</developerConnection>
+    </scm>
+
     <modules>
         <module>all</module>
         <module>core</module>
