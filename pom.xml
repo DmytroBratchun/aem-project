@@ -14,22 +14,20 @@
  |  See the License for the specific language governing permissions and
  |  limitations under the License.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.bratchun.project</groupId>
     <artifactId>bratchun-project</artifactId>
     <packaging>pom</packaging>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>My project</name>
     <description>My project</description>
 
     <scm>
         <connection>scm:git:https://github.com/DmitryBratchun/aem-project.git</connection>
         <developerConnection>scm:git:https://github.com/DmitryBratchun/aem-project.git</developerConnection>
-        <tag>${version}</tag>
+        <tag>0.0.1-SNAPSHOT</tag>
     </scm>
 
     <modules>
