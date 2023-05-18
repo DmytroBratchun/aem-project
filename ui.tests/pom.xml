@@ -24,7 +24,7 @@
     <parent>
         <groupId>com.bratchun.project</groupId>
         <artifactId>bratchun-project</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <version>0.0.3</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
