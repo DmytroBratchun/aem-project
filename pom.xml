@@ -20,7 +20,7 @@
     <groupId>com.bratchun.project</groupId>
     <artifactId>bratchun-project</artifactId>
     <packaging>pom</packaging>
-    <version>0.0.7-SNAPSHOT</version>
+    <version>0.0.7</version>
     <name>My project</name>
     <description>My project</description>
 
@@ -28,7 +28,8 @@
         <connection>scm:git:https://github.com/DmitryBratchun/aem-project.git</connection>
         <developerConnection>scm:git:https://github.com/DmitryBratchun/aem-project.git</developerConnection>
 <!--        <tag>${version}</tag>-->
-    </scm>
+      <tag>0.0.7-SNAPSHOT</tag>
+  </scm>
 
     <modules>
         <module>all</module>
