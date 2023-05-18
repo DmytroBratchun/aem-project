@@ -74,6 +74,7 @@
                     <goals>install</goals>
                     <releaseProfiles>release</releaseProfiles>
                     <tagNameFormat>${project.version}</tagNameFormat>
+                    <projectVersionPolicyId>SemVerVersionPolicy</projectVersionPolicyId>
                 </configuration>
             </plugin>
             <!-- Maven Source Plugin -->
