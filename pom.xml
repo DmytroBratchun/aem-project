@@ -27,7 +27,6 @@
     <scm>
         <connection>scm:git:https://github.com/DmitryBratchun/aem-project.git</connection>
         <developerConnection>scm:git:https://github.com/DmitryBratchun/aem-project.git</developerConnection>
-<!--        <tag>${version}</tag>-->
       <tag>HEAD</tag>
   </scm>
 
