@@ -27,7 +27,7 @@
     <scm>
         <connection>scm:git:https://github.com/DmitryBratchun/aem-project.git</connection>
         <developerConnection>scm:git:https://github.com/DmitryBratchun/aem-project.git</developerConnection>
-      <tag>HEAD</tag>
+        <tag>@{project.version}</tag>
   </scm>
 
     <modules>
@@ -73,7 +73,6 @@
                     <preparationGoals>clean install</preparationGoals>
                     <goals>install</goals>
                     <releaseProfiles>release</releaseProfiles>
-                    <tagNameFormat>@{project.version}</tagNameFormat>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
 <!--                    <pushChanges>false</pushChanges>-->
 <!--                    <remoteTagging>false</remoteTagging>-->
