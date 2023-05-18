@@ -76,7 +76,7 @@
                     <tagNameFormat>${project.version}</tagNameFormat>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <pushChanges>false</pushChanges>
-                    <remoteTagging>false</remoteTagging>
+<!--                    <remoteTagging>false</remoteTagging>-->
                 </configuration>
             </plugin>
             <!-- Maven Source Plugin -->
