@@ -75,6 +75,7 @@
                     <releaseProfiles>release</releaseProfiles>
                     <tagNameFormat>${project.version}</tagNameFormat>
                     <projectVersionPolicyId>SemVerVersionPolicy</projectVersionPolicyId>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
             <!-- Maven Source Plugin -->
